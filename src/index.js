@@ -17,8 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
     tasks.appendChild(list)
     //add delete button
     const deleteButton = document.createElement('button')
+    // add innerText
     deleteButton.innerText = 'x'
+    //appendchild deleteButton to list
     list.appendChild(deleteButton)
+    //when click the 'x', remove list
     deleteButton.addEventListener('click',e=>{
       list.remove()
     })
